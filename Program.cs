@@ -53,30 +53,47 @@
 // Console.WriteLine($"Принято! Ваш возраст: {enteredAge}");
 
 
-// 7
+// // 7
+// Console.WriteLine();
+// Console.WriteLine("Меню (без выхода, один проход)");
+
+// string menuChoice;
+// do {
+//     Console.WriteLine("1 - Показать дату");
+//     Console.WriteLine("2 - Показать приветствие");
+//     Console.WriteLine("0 - Выход");
+//     Console.Write("Выберите пункт: ");
+//     menuChoice = Console.ReadLine();
+
+//     switch (menuChoice) {
+//         case "1":
+//             Console.WriteLine($"Сейчас: {DateTime.Now:dd.MM.yyyy}");
+//             break;
+//         case "2":
+//             Console.WriteLine("Здравствуйте! Рады видеть вас снова.");
+//             break;
+//         case "0":
+//             Console.WriteLine("До свидания!");
+//             break;
+//         default:
+//             Console.WriteLine("Такого пункта нет, попробуйте снова.");
+//             break;
+//     }
+// } while (menuChoice != "0");
+
+
+//9
 Console.WriteLine();
-Console.WriteLine("Меню (без выхода, один проход)");
+Console.WriteLine("Обратный счёт");
+for (int i = 5; i >= 1; i--)
+{
+    Console.WriteLine(i);
+}
 
-string menuChoice;
-do {
-    Console.WriteLine("1 - Показать дату");
-    Console.WriteLine("2 - Показать приветствие");
-    Console.WriteLine("0 - Выход");
-    Console.Write("Выберите пункт: ");
-    menuChoice = Console.ReadLine();
-
-    switch (menuChoice) {
-        case "1":
-            Console.WriteLine($"Сейчас: {DateTime.Now:dd.MM.yyyy}");
-            break;
-        case "2":
-            Console.WriteLine("Здравствуйте! Рады видеть вас снова.");
-            break;
-        case "0":
-            Console.WriteLine("До свидания!");
-            break;
-        default:
-            Console.WriteLine("Такого пункта нет, попробуйте снова.");
-            break;
-    }
-} while (menuChoice != "0");
+Console.WriteLine();
+Console.WriteLine("Четные числа от 0 до 20");
+for (int i = 0; i <= 20; i += 2)
+{
+    Console.Write($"{i}");
+}
+Console.WriteLine();
